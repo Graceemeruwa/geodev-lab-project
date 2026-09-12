@@ -1,27 +1,40 @@
 # geodev-lab-project
 
-# University of Ibadan deforestation and carbon loss, 2000 to 2025
+# Health facility distribution and population load in Ila LGA, Osun State
 
-How much tree canopy did the University of Ibadan campus lose between 2000 and 2025, and how much above-ground carbon was lost with it?
+## The question
+
+How many health facilities does each ward in Ila Local Government Area, Osun State contain, and how many residents does a single facility have to cover in each of those wards?
+
+## Why it is worth doing
+
+Ila is a largely rural local government of about 303 square kilometres, run from Ila Orangun and split into eleven wards. Provision tends to gather around the headquarters town, leaving outlying wards thinner without anyone having planned it that way.
+
+A facility count on its own hides this. Three clinics covering 2,500 residents and three covering 22,000 give the same number while describing different situations. Dividing ward population across the facilities present converts the count into a measure of load, which is what shows where the strain actually falls.
+
+The local government health department and the Osun State Primary Health Care Development Board both have to choose where new primary health centres go and which existing ones need staffing first. Neither choice currently rests on a ward-level figure.
 
 Built over twelve months with GeoDev Lab Africa, Cohort One.
 
 ## Study area
 
-The University of Ibadan estate in Ibadan North LGA, Oyo State, Nigeria, at approximately 7.44 degrees north, 3.90 degrees east. About 1,185 hectares across three parcels: developed campus, Ajibode resettlement area, and undeveloped extension site.
+Ila Local Government Area, Osun State, Nigeria. Headquarters at Ila Orangun, approximately 8.02 degrees north and 4.90 degrees east. Around 303 square kilometres, eleven wards.
 
 All analysis is carried out in EPSG:32631, UTM zone 31 north.
 
 ## Data
 
-| Layer | Source | Resolution | Coverage |
-|---|---|---|---|
-| Campus boundary | Digitised from OpenStreetMap and Sentinel-2 imagery | vector | 3 parcels |
-| Tree canopy cover 2000 | Hansen Global Forest Change GFC-2025-v1.13 | 30 m | year 2000 baseline |
-| Year of canopy loss | Hansen Global Forest Change GFC-2025-v1.13 | 30 m | 2001 to 2025 |
-| Above-ground biomass | ESA CCI Biomass v7.0 | 100 m | 2005 to 2012, 2015 to 2024 |
-| Optical imagery | Copernicus Sentinel-2 Level 2A | 10 m | 2015 to present |
-| Roads, buildings, land use | OpenStreetMap via QuickOSM | vector | current |
+GRID3 is the primary source for this project.
+
+| Layer | Source | Type |
+|---|---|---|
+| Ward boundaries | GRID3 NGA Operational Wards v3.0 | polygon |
+| LGA boundary | GRID3 NGA Operational LGA Boundaries | polygon |
+| Health facilities | GRID3 NGA Health Facilities v3.0 | point |
+| Population estimates | GRID3 NGA gridded population, 100 m | raster |
+| Settlement extents | GRID3 NGA Settlement Extents v4.1 | polygon |
+| Facility cross-check | Nigeria Health Facility Registry | table |
+| Roads | OpenStreetMap via QuickOSM | line |
 
 ## Repository contents
 
@@ -33,8 +46,8 @@ All analysis is carried out in EPSG:32631, UTM zone 31 north.
 
 ## Attribution
 
-Hansen, M. C. et al. 2013. High-Resolution Global Maps of 21st-Century Forest Cover Change. Science 342: 850 to 853.
+GRID3 (Geo-Referenced Infrastructure and Demographic Data for Development). Operational Wards v3.0, Operational LGA Boundaries, Health Facilities v3.0, Settlement Extents v4.1, and gridded population estimates.
 
-Santoro, M. and Cartus, O. 2026. ESA Biomass Climate Change Initiative (Biomass_cci), v7.0. NERC EDS Centre for Environmental Data Analysis. doi:10.5285/6429d1aafe1e43b9b414e4a5a7f8b903
+Nigeria Health Facility Registry, Federal Ministry of Health.
 
-© OpenStreetMap contributors. Contains modified Copernicus Sentinel data.
+© OpenStreetMap contributors.
