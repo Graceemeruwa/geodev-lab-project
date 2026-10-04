@@ -73,7 +73,9 @@ The analysis-ready GeoPackage is `data/processed/ila_analysis_ready.gpkg`.
 ## Attribution
 
 GRID3 (Geo-Referenced Infrastructure and Demographic Data for Development). Operational Wards v3.0, Operational LGA Boundaries, Health Facilities v3.0, and NGA Population Estimates v3.0.
-
 © OpenStreetMap contributors.
 
-Built over twelve months with GeoDev Lab Africa, Cohort One.
+   ## Month 2: development environment and early Python
+   - Week 5: set up Python, VS Code and the terminal. hello.py runs.
+
+
