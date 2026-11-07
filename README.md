@@ -86,3 +86,10 @@ Built over twelve months with GeoDev Lab Africa, Cohort One.
 
 - Week 5: set up Python, VS Code and the terminal. hello.py runs.
 - Week 6: set up the project with uv and added pandas. check.py prints the pandas version.
+- Week 7: analyse.py reads wards.csv, converts each area and classifies each ward.
+- Week 8: inspect_data.py summarises facility_count and residents_per_facility in my Ila ward results data (ila_ward_results.csv).
+- Week 9: summary.py splits the inspection into small functions and summarises facility_count, population and residents_per_facility for the 11 Ila wards.
+
+### Month 2 reflection
+
+Functions finally clicked this month, especially the difference between print and return: once I saw that inspect_column hands back a dictionary, reusing it on a second column took one line. Skipping empty cells with continue is still a little fuzzy, because I want to be sure when skipping is honest and when it hides a problem. My capstone shows 11 wards with an average of about 3,130 residents per facility, a smallest of 760 and a largest of 6,431. It reports 10 values for residents_per_facility against 11 for the other columns, because Eyindi has no facility listed and so has no ratio. That matches the Month 1 finding that Eyindi is the one ward with no facility.
